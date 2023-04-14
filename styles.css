@@ -1,0 +1,117 @@
+h1,h2,h3{
+    font-family: "Montserrat-bold";
+    text-align: center;
+}
+.h1-heading{
+    line-height: 1.5;
+}
+.h2-heading{
+    line-height: 1.5;
+
+}
+#Mefn_Title{
+    background-color:#10bba7;
+}
+.container-fluid{
+    padding: 1% 5%;
+    width: 100%;
+    margin: 0px;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    background-color: #44c68b;
+
+}
+
+/* Navbar related */
+.navbar{
+    padding:1px  10px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:active,
+.navbar-nav .show>.nav-link {
+    color: rgb(0, 0, 0);
+}
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
+  }
+
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(243, 241, 239);
+}
+
+
+
+.h1-heading{
+text-align: center;
+padding-bottom: 10px;
+margin-top: 100px;
+/* z-index: 10; */
+color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 15px;
+}
+.bg-image{
+    /* background-image: url(../Images/background.png); */
+    background-color: rgb(183, 62, 108);
+background-size: cover;
+color: white;
+filter: blur(3px);
+height: 100vh;
+}
+
+
+/* Features section */
+#features{
+    padding: 9% 5%;
+    /* background-color: #fff; */
+
+}
+.feature-box{
+    text-align: center;
+    padding: 4.5%;
+}
+
+p{
+    color: grey;
+}
+.icon{
+    color: #324f81;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: rgb(212, 47, 47);
+}
+
+
+
+/* call to action */
+#cta{
+    background-color: #44c68b;
+    color: #140e0e;
+    text-align: center;
+padding: 3% 10%;
+}
+.cta-heading{
+font-size: xx-large;
+font-family: "Montserrat-bold";
+line-height: 0.5;
+}
+
+/* footer section */
+
+#footer{
+   text-align: center;
+   padding: 2% 10%; 
+}
+.social-media{
+    padding: 0 3px;
+}
