@@ -17,6 +17,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 
 <body>
@@ -58,18 +60,22 @@
 <section id="sub_title">
     <div class="rowTitle">
       <div class="col-lg-12">
-        <div class="bg-image"></div>
+        <div class="bg-image">
+          <!-- <img class="image" src="./Images/branding_temp.svg"> -->
+
+        </div>
       <h1 class="h1-heading">Crafting and designing websites that attract, engage, and convert.</h1>
-  </div>
+
+    </div>
   </div>
 </section>
 
 
   <!-- Services -->
-  <section id="services">
-    <div class="row">
-      <h1>Services provided</h1>
+  <section id="services" >
+          <h1 class="service_heading1">Services provided</h1>
 
+    <div class="row">
   <div class="services-box col-lg-4">
     <i class="icon fa-solid fa-code fa-beat fa-4x"></i>
     <h3>Responsive Web Designing & Re-designing</h3>
@@ -78,7 +84,7 @@
 
   <div class="services-box col-lg-4">
     <!-- <i class="icon fa-solid fa-magnifying-glass fa-beat fa-4x"></i> -->
-<i class="icon fa-sharp fa-solid fa-mug-hot fa-beat fa-4x"></i>
+<i class="icon fa-sharp fa-solid fa-screwdriver-wrench fa-beat fa-4x"></i>
 
 <h3>Domain, Hosting & Website Maintanence</h3>
     <p>We provide end to end service from domain, hosting to web maintanence</p>
@@ -86,7 +92,7 @@
   <div class="services-box col-lg-4">
     <i class="icon fa-sharp fa-regular fa-thumbs-up fa-beat fa-4x"></i>
         <h3>Social Media Marketing</h3>
-    <p>Wonderful experienc with social media marketing.</p>
+    <p>Wonderful experience with social media marketing.</p>
 </div>
 <div class="services-box col-lg-4">
   <i class="icon fa-solid fa-magnifying-glass fa-beat fa-4x"></i>
@@ -94,7 +100,7 @@
   <p>We create great SEO</p>
 </div>
 <div class="services-box col-lg-4">
-  <i class="icon fa-solid fa-magnifying-glass fa-beat fa-4x"></i>
+  <i class="icon fa-solid fa-gears  fa-4x"></i>
     <h3>Custom Web devlopment & Support</h3>
   <p>Custom websites for corp. school, health care etc</p>
 </div>
@@ -114,10 +120,10 @@
     <div id="sd_carousel" class="carousel slide" data-bs-ride="false">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="0" class="active bttn-slides" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="1" class ="bttn-slides" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="2" class ="bttn-slides" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="3" class ="bttn-slides" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#sd_carousel" data-bs-slide-to="4" class ="bttn-slides" aria-label="Slide 5"></button>
 
       </div>
         <div class="carousel-inner">
@@ -189,19 +195,31 @@
 </div>
 </section>
 
-  <!-- Call to Action -->
-  <section id="cta">
-    <h3 class="cta-heading">Get in touch with us to start a journey with MEFN</h3>
-    <p class="cts_p">Phone number:</p> 
-    <p>Email:</p> 
-  </section>
 
+
+
+<!-- cta and contact together -->
+  <!-- Call to Action -->
+  <section id="Contact_us">
+<div class="row cta">
+  <h3 class="cta-heading">Start your journey with MEFN</h3>
+  <div class="column-phone col-lg-6 col-md-12">
+  
+    <div class="Phone-Email">
+  <i class="icon fa-sharp fa-solid fa-phone fa-4x"></i>
+    <span>   <p class="PE"> 0123456789</p> </span>
+  <i class="icon fa-solid fa-envelope fa-4x"></i>
+  <span>  <p class="PE">admin@mefn.com</p> </span>
+</div>
+
+</div>
   <!-- contact us form -->
-<section id="Contact_us">
+<div Class="column col-lg-6 col-md-12">
+  <!-- <section id="Contact_us"> -->
   <div class="contact-form-container">
-    <form action="#" method="post" class="contact-form" enctype="text/plain">
-      <h2>Contact Us</h2>
+    <form method="post" class="contact-form" action="#" enctype="text/plain">
       <div class="form-group">
+        <h3>Get in touch</h3>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required="" 
         placeholder="Full Name*" type="text" inputmode="text" autocomplete="given-name" value="">
@@ -211,8 +229,8 @@
         <input type="email" name="email" id="email" required="" placeholder="Email*">
       </div>
       <div class="form-group">
-        <label for="Phone Number">Phone:</label>
-        <input type="number" name="Phone" id="Phone_Number" required="" placeholder="Phone*">
+        <label for="Phone_Number">Phone:</label>
+        <input type="number" name="Phone" id="Phone_Number"  placeholder="Phone">
       </div>
       <div class="form-group">
         <label for="message">Message:</label>
@@ -222,7 +240,12 @@
     </form>
   </div>
   
-</section>  
+<!-- </section> -->
+ </div>
+  
+</div>
+</section>
+
 
   <!-- Footer -->
   <footer id="footer">
